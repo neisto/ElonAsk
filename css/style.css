@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Rubik+Maps&display=swap');
+
+main {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.header-nav {
+    width: 1100px;
+    height: 200px;
+    margin: 0 auto;
+    position: fixed;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-body {
+    background-color: rgba(235, 235, 235, 0.205);
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 2000px;
+    height: 1000px;
+    margin: 0 auto;
+    background-image: url(../img/space.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    box-sizing: content-box;    
+    animation: slide 500s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 0% 0%
+    }
+}
+
+.el-cont {
+        animation: slide 100s linear infinite;
+
+}
+
+.elon-cont {
+    height: auto;
+    position: absolute;
+    -webkit-animation: shakeElon     .5s ease-in-out .5s infinite alternate;     
+    /* animation: slide 100s linear infinite; */
+
+}
+
+@-webkit-keyframes shakeElon {
+    from {
+        -webkit-transform: rotate(1deg);
+    }
+    50%{
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-1deg);  
+        -webkit-transform-origin: center center;
+    }
+}
+
+.elon {
+    width: 750px;
+    height: 750px;
+    padding-left: 130px;
+    padding-bottom: 100px;
+}
+
+.loading {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    /* border: 1px solid; */
+    margin: 100px 310px;
+    /* opacity: 80%; */
+}
+
+.space-loading {
+    width: 2011px;
+    height: 1103px;
+    margin:  0 auto;
+    position: absolute;
+    background-image: url(../img/space.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    box-sizing: content-box;
+    animation:  slide 100s linear infinite;
+    z-index: 7;
+}
+
+.bg-loading {
+    position: relative;
+    width: 1803px;
+    height: 1104px;
+    background:  #FFF;
+    opacity: 90%;
+    z-index: 8;
+    left: -207px;
+    padding-left: 600px;
+}
+
+.earth-loading {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin: 100px 100px;
+    animation: spin 4s linear 0s infinite;
+    z-index: 2;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.rocket-loading {   
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 200px 200px;
+    animation: spinRocket 2s linear 0s infinite;
+    z-index: 3;
+}
+
+
+@keyframes spinRocket {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
+}
+
+.content-earth {
+    display: block;
+    position: relative;
+    width: 2000px;
+    top: 100px;
+}
+
+.none {
+    display: none;
+}
+
+.inp-container {
+    width: 650px;
+    height: 50px;
+    position: relative;
+}
+
+.search-form {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30% auto;
+}
+
+.inp { 
+    display: flex;
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid #000;
+    background: #FFF;
+    margin-left: 30px;
+    opacity: 80%;
+}
+
+.rocket-btn {
+    width: 80px;
+    height: auto;
+    transition: transform .0.3s;
+    cursor: pointer;
+    margin-left: 30px;
+    -webkit-animation: shake1     .4s ease-in-out .4s infinite alternate;    
+}
+
+.back-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transition: transform .0.3s;
+    cursor: pointer;
+    margin: 60px 90px;
+    z-index: 999;
+    transition: 0.5s;
+    left: -170px;
+}
+
+.back-btn:hover {
+    transform: scale(1.3);}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(3deg)  scale(1.2);
+    }
+    50%{
+        -webkit-transform: rotate(0deg)  scale(1.2);
+    }
+    to {
+        -webkit-transform: rotate(-3deg)  scale(1.2);  
+        -webkit-transform-origin: center center;
+    }
+}
+
+@-webkit-keyframes shake1 {
+    from {
+        -webkit-transform: rotate(4deg);
+    }
+    50%{
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-4deg);  
+        -webkit-transform-origin: center center;
+    }
+}
+
+.rocket-btn:hover {
+    -webkit-animation:shake     .1s ease-in-out .1s infinite alternate;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.cardWhether {
+    position: absolute;
+    z-index: 1;
+    margin: 10% auto;
+    width: 800px;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+    border-radius: 36px; 
+    border: 2px solid #000;
+    background: #FFF;
+
+}
+
+.widget-window {
+    position: absolute;
+    width: 1200px;
+    height: 800px;  
+}
+
+.widget-container {
+    position: fixed;
+    width: 100vw;
+    height: 960px;
+    background: var(--background, linear-gradient(59deg, #E0E7EF 15.92%, #F3F6F9 100.17%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column-reverse;
+    left: 0;
+}
+
+.widget-content {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    right: 7%;
+    bottom: 30%;
+    opacity: 80%;
+
+}
+
+.widget-cloud {
+    position: relative;
+    width: 2000px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
+
+}
+
+.current_weather {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    top: 35%;
+    left: 10%;
+    align-items: center;
+}
+.temp {
+    width: auto;
+    font-family:  Caveat;
+    font-size: 80px;
+    color: black;
+}
+.status {
+    margin-top: 20px;
+    width: 328px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+
+}
+.location {
+    width: auto;
+    font-family:  Caveat;
+    font-size: 80px;
+    color: black;
+}
+
+
+
+.clouds-widget {
+    width: 2000px;
+    height: auto;
+
+}
+
+
+
