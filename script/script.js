@@ -61,13 +61,13 @@ class WheatherCard {
                         item.code == this.status.code ?   this.status.innerHTML = `<img class="icons" src="./img/icons/${item.icon}.png" alt="">` : false
 
                     })
-                    this.object.temp > 15 && this.object.temp < 25 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/2.png" alt="">`  : false
-                    this.object.temp > 5 && this.object.temp < 15 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/7.png" alt="">` : false
-                    this.object.temp > -10 && this.object.temp < 5 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/5.png" alt="">` : false
-                    this.object.temp > -20 && this.object.temp < -9 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/6.png" alt="">` : false
-                    this.object.temp > -30 && this.object.temp < -19 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/8.png" alt="">` : false
-                    this.object.temp > 25 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/1.png" alt="">` : false
-                    data.current.condition.text.includes('rain') ||  data.current.condition.text.includes('thunder') ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/3.png" alt="">` : false
+                    this.object.temp > 15 && this.object.temp < 25 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/2.png" alt="">`  : false
+                    this.object.temp > 5 && this.object.temp < 15 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/7.png" alt="">` : false
+                    this.object.temp > -10 && this.object.temp < 5 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/5.png" alt="">` : false
+                    this.object.temp > -20 && this.object.temp < -9 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/6.png" alt="">` : false
+                    this.object.temp > -30 && this.object.temp < -19 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/8.png" alt="">` : false
+                    this.object.temp > 25 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/1.png" alt="">` : false
+                    data.current.condition.text.includes('rain') ||  data.current.condition.text.includes('thunder') ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/3.png" alt="">` : false
 
                     
 
@@ -100,13 +100,13 @@ class WheatherCard {
                         item.code == this.status.code ?   this.status.innerHTML = `<img class="icons" src="./img/icons/${item.icon}.png" alt="">` : false
 
                     })
-                    this.object.temp > 15 && this.object.temp < 25 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/2.png" alt="">`  : false
-                    this.object.temp > 5 && this.object.temp < 15 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/7.png" alt="">` : false
-                    this.object.temp > -10 && this.object.temp < 5 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/5.png" alt="">` : false
-                    this.object.temp > -20 && this.object.temp < -9 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/6.png" alt="">` : false
-                    this.object.temp > -30 && this.object.temp < -19 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/8.png" alt="">` : false
-                    this.object.temp > 25 ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/1.png" alt="">` : false
-                    data.current.condition.text.includes('rain') ||  data.current.condition.text.includes('thunder') ? this.elon.innerHTML = `<img class="elon" src=".//img/ElonImg/3.png" alt="">` : false
+                    this.object.temp > 15 && this.object.temp < 25 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/2.png" alt="">`  : false
+                    this.object.temp > 5 && this.object.temp < 15 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/7.png" alt="">` : false
+                    this.object.temp > -10 && this.object.temp < 5 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/5.png" alt="">` : false
+                    this.object.temp > -20 && this.object.temp < -9 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/6.png" alt="">` : false
+                    this.object.temp > -30 && this.object.temp < -19 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/8.png" alt="">` : false
+                    this.object.temp > 25 ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/1.png" alt="">` : false
+                    data.current.condition.text.includes('rain') ||  data.current.condition.text.includes('thunder') ? this.elon.innerHTML = `<img class="elon" src="../img/ElonImg/3.png" alt="">` : false
 
                     
 
